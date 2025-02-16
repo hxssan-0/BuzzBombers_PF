@@ -1,0 +1,26 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g",
+                "buzz.cpp",  // Replace with your source files
+                "-o",
+                "buzz.exe",  // Output executable name
+                "-I", "C:/Users/rizwa/Downloads/SFML/SFML/include",  // Path to SFML include directory
+                "-L", "C:/Users/rizwa/Downloads/SFML/SFML/lib",  // Path to SFML lib directory
+                "-lsfml-graphics",
+                "-lsfml-window",
+                "-lsfml-system"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}
